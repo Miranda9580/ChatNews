@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Category Classification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Fake news when candidate articles are listed</h2>
+
+  <div class="leaderboard-subsection">
+    <h3>Explored prompts</h3>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">PROMPT</th>
+            <th scope="col">TEXT CONTENT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[0]</td>
+            <td>Output format: a python list of IDs that are exclusively from the provided list. Do not explain the reason or include any other words. <br> 
+            The user has interacted with the following articles in the json file 'history article': {"history articles": [{"title": "article1"}, {"title": "article2"}, ...]}. From the candidates listed in the json file 'candidate articles', choose the top 10 articles to recommend to the user and rank them in order of priority from the highest to the lowest: {"candidate articles":[{"ID": N12344, "title": "candidate1"},{"ID": N12345, "title": "candidate3"},...]}.</td>
+          </tr>
+          <tr>
+            <td>[1]</td>
+            <td>Output format: a python list of IDs that are exclusively from the provided list. Do not explain the reason or include any other words. <br> 
+            The user has interacted with the following articles in the json file 'history article': {"history articles": [{"title": "article1"}, {"title": "article2"}, ...]}. From the candidates listed in the json file 'candidate articles', choose the top 10 articles to recommend to the user and rank them in order of priority from the highest to the lowest: {"candidate articles":[{"ID": "a", "title": "candidate1"},{"ID": "b", "title": "candidate3"},...]}.</td>
+          </tr>
+          <tr>
+            <td>[2]</td>
+            <td>Requirements: you must choose 10 articles for recommendation and sort them in order of priority, from the highest to the lowest. Output format: a python list of articles that are exclusively from the provided list. Do not explain the reason or include any other words. <br> 
+              The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"title": "candidate1"}, {"title": "candidate2"}...]}. From the candidates listed in the json file 'candidate articles' below, choose the top 10 articles to recommend to the user and rank them from the highest to the lowest: {"candidate articles": [{"title": "candidate1"}, {"title": "candidate2"}...]}.</td>
+          </tr>
+    
+        </tfoot>
+      </table>
