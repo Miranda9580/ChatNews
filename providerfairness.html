@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Category Classification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>News provider fairness issue when candidate articles are not listed</h2>
+
+  <div class="leaderboard-subsection">
+    <h3>Explored prompts</h3>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">PROMPT</th>
+            <th scope="col">TEXT CONTENT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>[0]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+            The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest.</td>
+          </tr>
+          <tr>
+            <td> [1]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+              The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest while balancing the number of popular and unpopular providers.  </td>
+          </tr>
+          <tr>
+            <td> [2]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+              The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest while 8 are from popular providers and 2 are from unpopular providers.  </td>
+          </tr>
+          <tr>
+            <td> [3]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+              The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest while 5 are from popular providers and 5 are from unpopular providers.  </td>
+          </tr>
+          <tr>
+            <td> [4]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+              Here is a list of 100 popular providers: ["cnn", ...], and here is a list of 68 unpopular providers: ["carscoops", ...]. The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest while 8 are from popular providers and 2 are from unpopular providers.  </td>
+          </tr>
+          <tr>
+            <td> [5]</td>
+            <td>Requirement: you must recommend 10 articles and sort them in order of priority, from the highest to the lowest. Output format: a python list of tuple (recommended provider, the corresponding poularity). Do not explain the reason or include any other words. <br>
+              Here is a list of 100 popular providers: ["cnn", ...], and here is a list of 68 unpopular providers: ["carscoops", ...]. The user has interacted with the following articles in the json file 'history articles': {"history articles": [{"provider": xxx, "popularity": popular/unpopular, "title": "article1"}, {"provider": xxx, "popularity": popular/unpopular, "title": "article2"}, ...]}. Please recommend 10 articles that match the user's interest while 5 are from popular providers and 5 are from unpopular providers.  </td>
+          </tr>
+
+        </tfoot>
+      </table>
+
+
+      
+    
+
+
+  </div>
+
+  <!-- Add other content for the category page as needed -->
+  
+</body>
+</html>
+
+
