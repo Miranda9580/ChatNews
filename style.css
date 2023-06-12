@@ -1,0 +1,202 @@
+
+header {
+    background-color: hwb(0 100% 0% / 0.008);
+    color: hsl(242, 90%, 53%);
+    display: flex;
+    justify-content:space-between; 
+    align-items:center;
+    padding: 10px 20px;
+  }
+  
+.logo img{
+    height: 50px;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 20px;
+}
+
+nav a{
+    color: hsl(242, 90%, 53%);
+    text-decoration: none;
+}
+
+
+.hero-section{
+    background-image: url('background.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+.hero-section::before{
+    content: '';
+    position:absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero-title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text{
+    font-size: 1.5rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  th,
+  td {
+    padding: 10px 15px;
+  }
+  thead {
+    background: #395870;
+    color: #fff;
+  }
+  th {
+    font-weight: bold;
+  }
+  tbody tr:nth-child(even) {
+    background: #f0f0f2;
+  }
+  td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+  }
+  td:first-child {
+    border-left: 1px solid #cecfd5;
+  }
+
+
+/* Adjust the font and the margin in the 'about chatnews' section */
+.about-section {
+  font-family: "Nunito", sans-serif; /* Adjust the font family as per your preference */
+  margin-top: 100px; /* Adjust the margin value as per your preference */
+  margin-bottom: 20px; /* Adjust the margin value as per your preference */
+  margin-left: 150px; 
+  margin-right: 150px;
+  color:#1e1e1f;
+  
+}
+
+.about-section h2 {
+  font-size: 32px; /* Adjust the font size as per your preference */
+}
+
+.about-section p {
+  font-size: 20px; /* Adjust the font size as per your preference */
+  color:#464748;
+}
+
+
+/* Adjust the font and the margin in the 'download' section */
+#download-section {
+  font-family: "Nunito", sans-serif; /* Adjust the font family as per your preference */
+  margin-top: 30px; /* Adjust the margin value as per your preference */
+  margin-bottom: 20px; /* Adjust the margin value as per your preference */
+  margin-left: 150px; 
+  margin-right: 150px;
+  color:#1e1e1f;
+  
+}
+
+#download-section h2 {
+  font-size: 32px; /* Adjust the font size as per your preference */
+}
+
+#download-section p {
+  font-size: 20px; /* Adjust the font size as per your preference */
+  color:#464748;
+}
+
+/* Adjust the font and the margin in the 'Tasks' section */
+#task-section {
+  font-family: "Nunito", sans-serif; /* Adjust the font family as per your preference */
+  margin-top: 30px; /* Adjust the margin value as per your preference */
+  margin-bottom: 20px; /* Adjust the margin value as per your preference */
+  margin-left: 150px; 
+  margin-right: 150px;
+  color:#1e1e1f;
+  
+}
+
+#task-section h2 {
+  font-size: 32px; /* Adjust the font size as per your preference */
+}
+
+#task-section p {
+  font-size: 20px; /* Adjust the font size as per your preference */
+  color:#464748;
+}
+
+/* Adjust the font and the margin in the 'Explore' section */
+#explore-section {
+  font-family: "Nunito", sans-serif; /* Adjust the font family as per your preference */
+  margin-top: 30px; /* Adjust the margin value as per your preference */
+  margin-bottom: 20px; /* Adjust the margin value as per your preference */
+  margin-left: 150px; 
+  margin-right: 150px;
+  color:#1e1e1f;
+  
+}
+
+#explore-section h2 {
+  font-size: 32px; /* Adjust the font size as per your preference */
+}
+
+#explore-section p {
+  font-size: 20px; /* Adjust the font size as per your preference */
+  color:#464748;
+}
+
+
+.homepage-table {
+  width: 50%;
+  border-collapse: collapse;
+  /* Add any other custom styles you want */
+}
+
+.homepage-table th,
+.homepage-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #1e1e1f;
+  background-color: #fff;
+  /* Add any other custom styles for table cells */
+}
+
+.homepage-table th {
+  background-color: #ffffff;
+  /* Add any other custom styles for table cells */
+}
+
+.homepage-table tr {
+  background-color: white;
+}
+.homepage-table td:first-child {
+  width: 20%; /* Adjust the width as needed */
+}
+
+.homepage-table td:nth-child(2) {
+  width: 80%; /* Adjust the width as needed */
+}
